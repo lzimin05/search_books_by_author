@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: service-a
+
+service-b:
+  url: http://localhost:8081
+
+webclient:
+  timeout: 60000
+  max-retries: 3
+  retry-delay: 1000
+
+logging:
+  level:
+    com.bookclient: INFO
